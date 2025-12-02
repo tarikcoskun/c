@@ -5,7 +5,7 @@ int main() {
 	int max = 0;
 
 	for (int i = 1; i <= 5; i++) {
-		printf("%d . sayiyi girin: ", i);
+		printf("%d. sayiyi girin: ", i);
 		scanf("%d", &sayi);
 		if (sayi > max) {
 			max = sayi;

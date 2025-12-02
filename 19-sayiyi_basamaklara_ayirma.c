@@ -1,4 +1,3 @@
-#include <math.h>
 #include <stdio.h>
 
 int main() {
@@ -7,9 +6,9 @@ int main() {
 	int ortalama = 0;
 
 	for (int i = 120; i <= 850; i++) {
-		int birler = floor(i % 10);
-		int onlar = floor(i / 10 % 10);
-		int yuzler = floor(i / 100);
+		int birler = i / 1 % 10;
+		int onlar = i / 10 % 10;
+		int yuzler = i / 100 % 10;
 
 		if ((birler != onlar) && (onlar != yuzler) && (birler != yuzler) && ((birler + onlar + yuzler) > 15)) {
 			printf("%d\n", i);
