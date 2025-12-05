@@ -13,12 +13,17 @@ int main() {
 	int bosluk = 17;
 
 	for (int i = 0; i < 5; i++) {
-		for (int j = 0; j < adet; j++)
+		for (int j = 0; j < adet; j++) {
 			printf("*");
-		for (int a = 0; a < bosluk; a++)
+		}
+
+		for (int a = 0; a < bosluk; a++) {
 			printf(" ");
-		for (int j = 0; j < adet; j++)
+		}
+
+		for (int j = 0; j < adet; j++) {
 			printf("*");
+		}
 
 		adet += 2;
 		bosluk -= 4;
