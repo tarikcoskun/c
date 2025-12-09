@@ -14,20 +14,20 @@ int main() {
 	int matris[5][5];
 	int satir_toplam = 0;
 
-	for (int i = 0; i < 5; i++) {
-		for (int j = 0; j < 4; j++) {
+	for (int r = 0; r < 5; r++) {
+		for (int c = 0; c < 4; c++) {
 			int sayi = 50 + rand() % 200;
-			matris[i][j] = sayi;
+			matris[r][c] = sayi;
 			satir_toplam += sayi;
 		}
 
-		matris[i][4] = satir_toplam;
+		matris[r][4] = satir_toplam;
 		satir_toplam = 0;
 	}
 
-	for (int i = 0; i < 5; i++) {
-		for (int j = 0; j < 5; j++) {
-			printf("%d\t", matris[i][j]);
+	for (int r = 0; r < 5; r++) {
+		for (int c = 0; c < 5; c++) {
+			printf("%d\t", matris[r][c]);
 		}
 
 		printf("\n");

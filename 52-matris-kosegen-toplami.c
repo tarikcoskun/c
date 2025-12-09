@@ -9,9 +9,9 @@ int main() {
 	int sari_kosegen = 0;
 	int kirmizi_kosegen = 0;
 
-	for (int i = 0; i < 10; i++) {
-		for (int j = 0; j < 10; j++) {
-			matris[i][j] = 0 + rand() % 100;
+	for (int r = 0; r < 10; r++) {
+		for (int c = 0; c < 10; c++) {
+			matris[r][c] = 0 + rand() % 100;
 		}
 	}
 
@@ -20,10 +20,10 @@ int main() {
 	  1, 1
 	...
 	*/
-	for (int i = 0; i < 10; i++) {
-		for (int j = 0; j < 10; j++) {
-			if (i == j) {
-				sari_kosegen += matris[i][j];
+	for (int r = 0; r < 10; r++) {
+		for (int c = 0; c < 10; c++) {
+			if (r == c) {
+				sari_kosegen += matris[r][c];
 			}
 		}
 	}
@@ -33,17 +33,17 @@ int main() {
 	  1, 8
 	...
 	*/
-	for (int i = 0; i < 10; i++) {
-		for (int j = 9; j >= 0; j--) {
-			if (i + j == 9) {
-				kirmizi_kosegen += matris[i][j];
+	for (int r = 0; r < 10; r++) {
+		for (int c = 9; c >= 0; c--) {
+			if (r + c == 9) {
+				kirmizi_kosegen += matris[r][c];
 			}
 		}
 	}
 
-	for (int i = 0; i < 10; i++) {
-		for (int j = 0; j < 10; j++) {
-			printf("%d\t", matris[i][j]);
+	for (int r = 0; r < 10; r++) {
+		for (int c = 0; c < 10; c++) {
+			printf("%d\t", matris[r][c]);
 		}
 
 		printf("\n");
@@ -51,8 +51,8 @@ int main() {
 
 	printf("\n");
 
-	printf("sarı toplamı: %d\n", sari_kosegen);
-	printf("kırmızı toplamı: %d\n", kirmizi_kosegen);
+	printf("Sarı köşegen toplamı: %d\n", sari_kosegen);
+	printf("Kırmızı köşegen toplamı: %d\n", kirmizi_kosegen);
 
 	return 0;
 }

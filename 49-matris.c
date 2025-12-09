@@ -5,18 +5,18 @@ int main() {
 
 	printf("Sayı matrisinin elemanlarını girin:\n");
 
-	for (int i = 0; i < 3; i++) {
-		for (int j = 0; j < 4; j++) {
-			printf("sayilar(%d, %d) = ", i, j);
-			scanf("%d", &sayilar[i][j]);
+	for (int satir = 0; satir < 3; satir++) {
+		for (int sutun = 0; sutun < 4; sutun++) {
+			printf("sayilar(%d, %d) = ", satir, sutun);
+			scanf("%d", &sayilar[satir][sutun]);
 		}
 	}
 
 	printf("\n");
 
-	for (int i = 0; i < 3; i++) {
-		for (int j = 0; j < 4; j++) {
-			printf("%d\t", sayilar[i][j]);
+	for (int satir = 0; satir < 3; satir++) {
+		for (int sutun = 0; sutun < 4; sutun++) {
+			printf("%d\t", sayilar[satir][sutun]);
 		}
 
 		printf("\n");
